@@ -1,0 +1,43 @@
+<div>
+  <div class="submit-form">
+      <div class="form-group">
+        <label for="title">Nome</label>
+        <input type="text" class="form-control" id="title" required [(ngModel)]="user.name" name="title"/>
+      </div>
+
+      <div class="form-group">
+        <label for="surname">Sobrenome</label>
+        <input
+          class="form-control"
+          id="surname"
+          required
+          [(ngModel)]="user.surname"
+          name="surname"
+        />
+      </div>
+
+      <div class="form-group">
+        <label for="username">Usuário</label>
+        <input type="text" class="form-control" id="username" required [(ngModel)]="user.username" name="username"/>
+      </div>
+
+      <div class="form-group">
+        <label for="birthDate">Data de nascimento</label>
+        <input type="text" class="form-control" id="birthDate" required [(ngModel)]="user.birthDate" name="birthDate"/>
+      </div>
+
+      <div class="form-group">
+        <label for="email">Email</label>
+        <input type="text" class="form-control" id="email" required [(ngModel)]="user.email" name="email"/>
+      </div>
+
+      <div class="form-group">
+        <label for="phone">Telefone</label>
+        <input type="text" class="form-control" id="phone" required [(ngModel)]="user.phoneNumber" name="phone"/>
+      </div>
+
+      <button (click)="saveUser()" class="btn btn-success">Cadastrar</button>
+    </div>
+
+  </div>
+
